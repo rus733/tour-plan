@@ -4,6 +4,7 @@
 
 body {
   font-family: "Mulish", sans-serif;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -445,7 +446,10 @@ template {
 }
 
 .breadcrumb-list {
+  display: flex;
+  align-items: center;
   list-style: none;
+  background-color: #F5FAFE;
 }
 
 @media (max-width: 1200px) {
