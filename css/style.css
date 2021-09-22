@@ -444,6 +444,10 @@ template {
   color: #333333;
 }
 
+.breadcrumb-list {
+  list-style: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
