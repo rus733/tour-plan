@@ -100,8 +100,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -435,8 +434,7 @@ template {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .user__name {
   margin-left: 18px;
@@ -623,4 +621,4 @@ template {
   .logo {
     width: 99px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
