@@ -1,6 +1,7 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -10,8 +11,9 @@
     &-top
       padding-top: 30px
       padding-bottom: 30px     
-    &__search
-      margin-left: auto
+      &__search
+        margin-left: auto
+        margin-right: 73px
       
 
     &-menu
@@ -27,21 +29,52 @@
 @media (max-width: 768px)
 
   .container
+    max-width: 700px
+    width: 100%
+
+  .navbar
+    &-menu
+      padding-top: 21px
+      padding-bottom: 22px 
+      padding-left: 15px 
+      padding-right: 15px
+    &-top
+      &__search
+        margin-left: auto
+        margin-right: 73px
+
+  .stars 
+    flex-basis: 100%
+  .hotel
+    &-info
+      &__rating
+        margin-top: 7px
+
+
+        
+@media (max-width: 576px)
+  .container
     max-width: 576px
-    width: 92%
+    width: 92% 
+  .logo
+    width: 99px
   .navbar
     &-menu
       display: none 
     &-top
       &__search, &__user
-        display: none 
-    
+        display: none  
+  .navbar
+    &-top
+      padding-top: 46px
+      padding-bottom: 30px 
+      padding-right: 12px
   .menu
     &-button
       display: flex
       width: 16px
-      height: 11px
-      padding: 0
+      height: 14px
+      padding-top: 3px
       align-items: center
       justify-content: space-between
       flex-direction: column
@@ -52,36 +85,61 @@
         width: 16px
         height: 1px
         background-color: $text-color
-  .stars 
-    flex-basis: auto
-
+  .rating
+    display: none   
   .hotel
     &-name
       flex-basis: 100% 
     &-wrapper
       justify-content: space-between
-
     &-info
       &__text
         width: 100%
       &__name
         margin-top: 10px
         margin-bottom: 0
-      &__rating
-        display: none
       &__offer
         order: -1
         margin-left: 0
-        
+    
+  
+                        
+@media (max-width: 320px)
+  .container
+    width: 92%
 
-
-
-
-
-@media (max-width: 576px)
   .logo
     width: 99px
+  .navbar
+    &-top
+      padding-right: 17px 
+  .menu
+    &-button
+      padding-top: 4px            
+  .hotel
+    padding-top: 0 
+    &-description
+      padding-right: 50px
+    &-wrapper
+      justify-content: space-between
+      padding-right: 24px
+    &-info
+      &__offer
+        margin-left: 2px
 
+
+  .stars
+    flex-basis: auto
+    margin-right: 5px
+  
+
+        
+  
+
+          
+
+  
+    
 
             
 

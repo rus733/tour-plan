@@ -1,20 +1,18 @@
 {
   "compile-hero.disable-compile-files-on-did-save-code": false,
   "[json]": {
-
-    "editor.quickSuggestions": {
-      "strings": true
-    },
-    "editor.suggest.insertMode": "replace"
-  }
+              "editor.quickSuggestions": {
+                                          "strings": true
+                                          },
+              "editor.suggest.insertMode": "replace"
+            },
+  "liveSassCompile.settings.formats":  
+              [
+                {
+                  "format": "expanded",
+                  "extensionName": ".css",
+                  "savePath": "./css"
+                }
+              ]
+            
 }
-
-
-
-"liveSassCompile.settings.formats": [
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "./assets/css"
-        }
-    ],
