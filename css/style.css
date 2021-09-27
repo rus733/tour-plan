@@ -602,7 +602,7 @@ template {
     margin-top: 7px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
@@ -641,6 +641,10 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+
+  .stars {
+    flex-basis: auto;
   }
 
   .rating {
