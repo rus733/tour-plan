@@ -479,13 +479,15 @@ template {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 20px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 .hotel-info__offer {
-  margin-left: 14px;
-  margin-top: 4px;
+  margin-left: 15px;
+  margin-top: 2px;
 }
 .hotel-info__name {
-  margin-top: 2px;
+  margin-top: 1px;
   margin-bottom: 0;
 }
 .hotel-info__description {
@@ -539,6 +541,7 @@ template {
   color: #ffffff;
   background-color: #EC1F46;
   border-radius: 4px;
+  margin-top: 5px;
 }
 .rating__text {
   font-size: 8px;
@@ -575,6 +578,7 @@ template {
 .slider {
   width: 728px;
   height: 450px;
+  margin-left: 2px;
 }
 .slider-button {
   position: absolute;
@@ -610,7 +614,7 @@ template {
 .booking__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 .booking__price {
   display: flex;
@@ -631,7 +635,7 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
 }
 .booking__room {
   margin-top: 4px;
@@ -653,7 +657,8 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
+  margin-right: 3px;
 }
 .booking__heading {
   font-style: normal;
@@ -692,6 +697,7 @@ template {
   background-color: #EC1F46;
   border-radius: 10px;
   overflow: hidden;
+  border: none;
 }
 .map iframe {
   width: 100%;
@@ -801,11 +807,11 @@ template {
   }
 
   .booking {
-    width: 100%;
+    width: 340px;
   }
 
   .map {
-    width: 100%;
+    width: 340px;
   }
 }
 @media (max-width: 767px) {
@@ -879,6 +885,14 @@ template {
     height: 250px;
   }
 
+  .booking {
+    width: 100%;
+  }
+
+  .map {
+    width: 100%;
+  }
+
   .hotel__slider {
     margin-bottom: 20px;
   }
@@ -905,6 +919,7 @@ template {
   }
   .hotel-description {
     padding-right: 50px;
+    margin-bottom: 18px;
   }
   .hotel-wrapper {
     justify-content: space-between;
@@ -913,9 +928,37 @@ template {
   .hotel-info__offer {
     margin-left: 2px;
   }
+  .hotel-right {
+    min-height: 400px;
+  }
+
+  .breadcrumb-list {
+    margin-bottom: 2px;
+  }
 
   .stars {
     flex-basis: auto;
     margin-right: 5px;
+  }
+
+  .slider {
+    height: 179px;
+    width: 279px;
+    margin-left: 0;
+  }
+
+  .booking {
+    width: 96%;
+    padding-top: 27px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+  .booking__button {
+    margin-right: 2px;
+  }
+
+  .map {
+    width: 96%;
+    height: 172px;
   }
 }/*# sourceMappingURL=style.css.map */
