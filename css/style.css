@@ -693,6 +693,10 @@ template {
   border-radius: 10px;
   overflow: hidden;
 }
+.map iframe {
+  width: 100%;
+  height: 213px;
+}
 
 @media (max-width: 1200px) {
   .container {
