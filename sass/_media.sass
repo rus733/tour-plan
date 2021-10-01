@@ -10,7 +10,6 @@
         height: 100%
         object-fit: cover
 
-
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -23,8 +22,6 @@
       &__search
         margin-left: auto
         margin-right: 73px
-      
-
     &-menu
       padding-top: 22px
       padding-bottom: 22px
@@ -46,16 +43,17 @@
   .slider
     width: 100%
   .map
-    width: 340px      
-
-
+    width: 340px
+  .newsletter
+    &-wrapper 
+      max-width: 576px
+      width: 100%  
 
 @media (max-width: 768px)
-
+  
   .container
     max-width: 700px
     width: 100%
-
   .navbar
     &-menu
       padding-top: 21px
@@ -66,7 +64,6 @@
       &__search
         margin-left: auto
         margin-right: 73px
-
   .stars 
     flex-basis: 100%
   .hotel
@@ -82,13 +79,22 @@
   .booking 
     width: 340px 
   .map
-    width: 340px      
+    width: 340px
+  .newsletter
+    &-wrapper 
+      display: flex
+      max-width: 700px
+      width: 100%
+      flex-direction: column
+      align-items: flex-start
+    
 
 
 
         
 @media (max-width: 767px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 576px
     width: 92% 
   .logo
@@ -144,10 +150,20 @@
     width: 100%
   .map
     width: 100%    
-
   .hotel
     &__slider
-      margin-bottom: 20px       
+      margin-bottom: 20px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px   
+    &-wrapper 
+      display: flex
+      max-width: 576px
+      width: 100%
+      flex-direction: column
+      align-items: flex-start
+      
                         
 @media (max-width: 320px)
   .container
@@ -158,7 +174,7 @@
     &-top
       padding-top: 23px
       padding-right: 8px
-      padding-left: 7px 
+      padding-left: 5px 
   .menu
     &-button
       padding-top: 4px            
@@ -179,7 +195,7 @@
   .breadcrumb
     &-list
       margin-bottom: 2px
-      padding-left: 7px      
+      padding-left: 7px        
         
   .stars
     flex-basis: auto
@@ -201,8 +217,18 @@
       margin-right: 2px
   .map
     width: 96% 
-    height: 172px 
-    margin-left: 7px  
+    height: 172px
+    margin-left: 7px
+  .newsletter
+    width: 320px
+    height: 319px
+    padding: 76px 0 83px 0
+    &-wrapper 
+      width: 100%
+
+  .subscribe
+    width: 92%  
+
     
   
 
