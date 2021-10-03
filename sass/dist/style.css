@@ -513,6 +513,52 @@ template {
   flex-direction: column;
   justify-content: space-between;
 }
+.hotel-slider {
+  width: 728px;
+  height: 450px;
+  margin-left: 2px;
+}
+.hotel-slider__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.hotel-slider__item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+.hotel-slider__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+}
 
 .stars {
   flex-basis: 100%;
@@ -552,53 +598,6 @@ template {
 .rating__max {
   font-size: 10px;
   line-height: 12px;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 8px;
-}
-.swiper:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 10;
-}
-
-.slider {
-  width: 728px;
-  height: 450px;
-  margin-left: 2px;
-}
-.slider-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 99;
-  width: 30px;
-  height: 30px;
-  border: none;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  background-color: transparent;
-}
-.slider-button--next {
-  right: 18px;
-  background-image: url(../img/arrow-next.svg);
-}
-.slider-button--prev {
-  left: 18px;
-  background-image: url(../img/arrow-prev.svg);
 }
 
 .booking {
@@ -695,11 +694,84 @@ template {
   background-color: #EC1F46;
   border-radius: 10px;
   overflow: hidden;
-  border: none;
 }
 .map iframe {
   width: 100%;
   height: 213px;
+  border: none;
+}
+
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.newsletter:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+.newsletter-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 731px;
+  margin: auto;
+}
+.newsletter-title {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+.newsletter-title__strong {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 355px;
+  height: 55px;
+}
+.subscribe__input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 33px;
+  padding-right: 75px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+.subscribe__button {
+  position: absolute;
+  min-width: 65px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: none;
+  background-color: #EC1F46;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -768,6 +840,11 @@ template {
   .map {
     width: 340px;
   }
+
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -810,9 +887,18 @@ template {
   .map {
     width: 340px;
   }
+
+  .newsletter-wrapper {
+    display: flex;
+    max-width: 700px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 767px) {
-  .container {
+  .container,
+.newsletter-wrapper {
     max-width: 576px;
     width: 92%;
   }
@@ -829,7 +915,7 @@ template {
   }
 
   .navbar-top {
-    padding-top: 46px;
+    padding-top: 23px;
     padding-bottom: 30px;
     padding-right: 12px;
   }
@@ -893,6 +979,20 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
+
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .newsletter-wrapper {
+    display: flex;
+    max-width: 576px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 320px) {
   .container {
@@ -904,7 +1004,9 @@ template {
   }
 
   .navbar-top {
-    padding-right: 17px;
+    padding-top: 23px;
+    padding-right: 8px;
+    padding-left: 5px;
   }
 
   .menu-button {
@@ -920,7 +1022,10 @@ template {
   }
   .hotel-wrapper {
     justify-content: space-between;
-    padding-right: 24px;
+    padding-right: 17px;
+  }
+  .hotel-info {
+    padding-left: 7px;
   }
   .hotel-info__offer {
     margin-left: 2px;
@@ -931,6 +1036,7 @@ template {
 
   .breadcrumb-list {
     margin-bottom: 2px;
+    padding-left: 7px;
   }
 
   .stars {
@@ -941,11 +1047,12 @@ template {
   .slider {
     height: 179px;
     width: 279px;
-    margin-left: 0;
+    margin-left: 7px;
   }
 
   .booking {
     width: 96%;
+    margin-left: 7px;
     padding-top: 27px;
     padding-left: 23px;
     padding-right: 23px;
@@ -957,5 +1064,19 @@ template {
   .map {
     width: 96%;
     height: 172px;
+    margin-left: 7px;
+  }
+
+  .newsletter {
+    width: 320px;
+    height: 319px;
+    padding: 76px 0 83px 0;
+  }
+  .newsletter-wrapper {
+    width: 100%;
+  }
+
+  .subscribe {
+    width: 92%;
   }
 }
