@@ -4,7 +4,8 @@
   background-image: url(../img/newsletter-bg.jpg)
   background-repeat: no-repeat
   background-position: center
-  background-size: cover 
+  background-size: cover
+  height: 260px
   &:before
     content: ''
     position: absolute
@@ -23,11 +24,14 @@
     max-width: 731px
     margin: auto 
   &-title
+    margin-top: 0
+    margin-bottom: 0
     color: $light
     font-style: normal
     font-weight: 300
     font-size: 24px
     line-height: 30px
+
     &__strong
       display: block
       font-weight: 600
@@ -39,7 +43,7 @@
   display: flex //
   border-radius: 4px
   overflow: hidden // скрывать все что выпадаен за пределы блока
-  width: 355px
+  width: 350px
   height: 55px
   
   &__input
@@ -62,4 +66,8 @@
     border: none
     background-color: $primary
     color: $light
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
 
