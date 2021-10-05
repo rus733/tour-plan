@@ -75,46 +75,60 @@
     &-info
       &__rating
         margin-top: 7px 
-  .hotel
     &-right
-      flex-direction: column
-      min-height: 450px
+      flex-direction: row
+      max-height: 450px
     &-slider
       height: 450px   
   .booking 
     width: 340px 
+    height: 210px
   .map
     width: 340px
+    height: 210px
   .newsletter
     &-wrapper 
       display: flex
       max-width: 700px
       width: 100%
-      flex-direction: column
+      flex-direction: row
       align-items: flex-start
+    &-title
+      margin-top: -5px  
   .reviews
     &-slider
       &__item
-        padding: 0 30px 30px
+        padding: 0 62px 62px
         &:after, &:before
           display: none
+      &__profile
+        margin-top: -45px
+      &__username
+        margin-top: 9px
+        margin-bottom: 9px
+      &__date
+        margin-bottom: 0px 
+      &__rating
+        margin-top: -1px  
+        margin-left: 2px        
+      &__stars
+        margin-right: 0px
       &__button
-        top: 35px 
+        top: 172px 
         &--prev
-          left: 50%
-          transform: translate(-50%,0) 
-          margin-left: -65px
+          left: 0px
         &--next
-          right: 50%
-          transform: translate(50%,0) 
-          margin-right: -65px 
-
+          right: 0px
+          
+           
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+      line-height: 38px      
+  .subscribe
+    margin-top: 4px        
           
             
-
-
-
-        
 @media (max-width: 767px)
   .container,
   .newsletter-wrapper
@@ -154,6 +168,7 @@
   .rating
     display: none   
   .hotel
+    &-righ
     &-name
       flex-basis: 100% 
     &-wrapper
@@ -169,13 +184,11 @@
         margin-left: 0
     &__slider
       height: 250px 
+      margin-bottom: 20px
   .booking 
     width: 100%
   .map
     width: 100%    
-  .hotel
-    &__slider
-      margin-bottom: 20px
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -186,6 +199,19 @@
       width: 100%
       flex-direction: column
       align-items: flex-start
+  .reviews
+    &-slider
+      &__button
+        top: 35px 
+        &--prev
+          left: 50%
+          transform: translate(-50%,0) 
+          margin-left: -65px
+        &--next
+          right: 50%
+          transform: translate(50%,0) 
+          margin-right: -65px 
+
       
                         
 @media (max-width: 320px)
