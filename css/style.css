@@ -611,7 +611,7 @@ template {
   border-radius: 8px;
   width: 350px;
   min-height: 210px;
-  padding: 28px 22px;
+  padding: 29px 26px;
 }
 .booking__info {
   display: flex;
@@ -691,6 +691,7 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  margin-left: -1px;
   background-color: #EC1F46;
   color: #ffffff;
   border: none;
@@ -923,10 +924,10 @@ template {
 }
 
 .card {
-  border: 1px solid red;
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: 24px 26px;
   width: 255px;
   height: 255px;
@@ -949,6 +950,8 @@ template {
   right: 0;
   top: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -2;
@@ -961,6 +964,18 @@ template {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+}
+.card__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 7px 22px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -976,6 +991,11 @@ template {
   }
   .hotel__slider {
     width: 590px;
+  }
+
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 @media (max-width: 992px) {
@@ -1037,6 +1057,18 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 340px;
+    height: 255px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1076,6 +1108,7 @@ template {
   .booking {
     width: 340px;
     height: 210px;
+    padding: 29px 22px 30px 24px;
   }
 
   .map {
@@ -1095,7 +1128,7 @@ template {
   }
 
   .reviews {
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
   .reviews-slider__item {
     padding: 0 62px 30px;
@@ -1138,6 +1171,30 @@ template {
 
   .subscribe {
     margin-top: 4px;
+  }
+
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 37px;
+    padding-right: 36px;
+  }
+  .activities-wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .activities__title {
+    margin-bottom: 58px;
+  }
+
+  .card {
+    width: 48%;
+    height: 255px;
+  }
+  .card__button {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 7px 20px;
   }
 }
 @media (max-width: 767px) {
@@ -1246,6 +1303,10 @@ template {
     right: 50%;
     transform: translate(50%, 0);
     margin-right: -65px;
+  }
+
+  .card {
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
@@ -1396,6 +1457,10 @@ template {
     line-height: 18px;
   }
 
+  .reviews {
+    margin-bottom: 0;
+    height: 700px;
+  }
   .reviews__title {
     padding: 0 30px;
     margin-bottom: 45px;
@@ -1436,5 +1501,32 @@ template {
   }
   .reviews-slider__button--next {
     margin-right: -89px;
+  }
+
+  .activities {
+    padding-top: 0px;
+    padding-bottom: 60px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .activities__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  .activities-wrapper {
+    flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 340px;
+    height: 255px;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
