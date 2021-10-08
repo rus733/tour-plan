@@ -1188,7 +1188,7 @@ template {
   }
 
   .card {
-    width: 48%;
+    width: 340px;
     height: 255px;
   }
   .card__button {
@@ -1519,14 +1519,34 @@ template {
   }
   .activities-wrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .activities__card {
     margin-bottom: 20px;
+  }
+  .activities__card:nth-of-type(2n) {
+    border: 3px solid red;
+    order: 1;
+  }
+  .activities__card:nth-of-type(3) {
+    border: 3px solid blue;
+    margin-bottom: 30px;
+  }
+  .activities__card:nth-of-type(1) {
+    border: 3px solid black;
   }
 
   .card {
     width: 340px;
     height: 255px;
     margin-bottom: 20px;
+  }
+  .card__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+  }
+  .card__button:nth-of-type(1) {
+    padding: 7px 20px 6px 18px;
   }
 }/*# sourceMappingURL=style.css.map */
