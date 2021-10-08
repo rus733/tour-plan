@@ -1188,11 +1188,11 @@ template {
   }
 
   .card {
-    width: 340px;
+    width: 48%;
     height: 255px;
   }
   .card__button {
-    margin-left: 0px;
+    margin-left: 2px;
     margin-right: 0px;
     padding: 7px 20px;
   }
@@ -1525,15 +1525,10 @@ template {
     margin-bottom: 20px;
   }
   .activities__card:nth-of-type(2n) {
-    border: 3px solid red;
     order: 1;
   }
   .activities__card:nth-of-type(3) {
-    border: 3px solid blue;
     margin-bottom: 30px;
-  }
-  .activities__card:nth-of-type(1) {
-    border: 3px solid black;
   }
 
   .card {
