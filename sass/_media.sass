@@ -11,7 +11,15 @@
       width: 590px 
   .card
     width: 230px
-    height: 230px       
+    height: 230px
+  .footer 
+    &__input
+      flex-basis: 100%  
+
+
+
+
+
 
 @media (max-width: 992px)
   .container
@@ -63,7 +71,37 @@
       margin-bottom: 20px   
   .card
     width: 340px
-    height: 255px            
+    height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 47%
+      
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2 
+
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column: span 2    
+    &__contact
+      &-details
+        grid-column: span 5 
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4              
 
 @media (max-width: 768px)
   
@@ -161,6 +199,9 @@
       margin-left: 2px 
       margin-right: 0px
       padding: 7px 20px 
+  .footer
+    &__input
+      flex-basis: 47%    
 
     
           
@@ -250,9 +291,46 @@
           margin-right: -65px 
   .card
     width: 100%
-            
 
-      
+  .footer 
+    &__input
+      flex-basis: 100% 
+
+@media (max-width: 576px)
+  .footer 
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__input
+      flex-basis: 100% 
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1 
+    &__legal
+      grid-row: 3
+      grid-column: 1          
+    &__additional
+      grid-row: 4       
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1 
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__button     
+      grid-row: 8
+      grid-column: 1 
+    &__info
+      grid-row: 9
+      grid-column: 1     
                         
 @media (max-width: 320px)
   .container
@@ -438,6 +516,19 @@
     &__button
       &:nth-of-type(1)
         padding: 7px 20px 6px 18px
+  .footer
+    &__info
+      grid-row: 8
+      grid-column: 1
+      flex-basis: 100% 
+      
+
+    &__button
+      grid-row: 9
+      grid-column: 1 
+      width: 160px
+      flex-basis: 50% 
+      
         
 
 
