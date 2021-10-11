@@ -1362,7 +1362,7 @@ template {
 
   .activities {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 49px;
     padding-left: 37px;
     padding-right: 36px;
   }
@@ -1384,8 +1384,79 @@ template {
     padding: 7px 20px;
   }
 
+  .footer {
+    padding-top: 75px;
+  }
+  .footer-wrapper {
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+  }
   .footer__input {
     flex-basis: 47%;
+  }
+  .footer__logo {
+    grid-row: 1/2;
+    grid-column: span 2;
+    width: 100px;
+    height: 108px;
+    margin-top: 0px;
+  }
+  .footer__social-network {
+    grid-row: 1/2;
+    grid-column: span 10;
+    align-self: center;
+    justify-self: start;
+    margin-left: 70px;
+    margin-top: 8px;
+  }
+  .footer__social-links {
+    margin-top: 3px;
+  }
+  .footer__categories {
+    grid-row: 2/3;
+    grid-column: span 3;
+    margin-top: 40px;
+  }
+  .footer__additional {
+    grid-column: span 5;
+    margin-top: 40px;
+    margin-left: 22px;
+  }
+  .footer__legal {
+    grid-column: span 4;
+    justify-self: start;
+    margin-top: 40px;
+    margin-left: 25px;
+  }
+  .footer__contact-details {
+    grid-column: span 9;
+    grid-row: 3;
+    margin-top: 50px;
+  }
+  .footer__contact-form {
+    grid-column: span 5;
+    grid-row: 4;
+  }
+  .footer__title {
+    margin-top: 0px;
+  }
+  .footer__title--inline {
+    margin: 0px 43px 0 0;
+  }
+  .footer__title--mb-4 {
+    margin-bottom: 35px;
+  }
+  .footer__contact-form {
+    margin-top: 25px;
+    margin-left: -3px;
+  }
+  .footer__icon-wrapper {
+    margin-left: 7px;
+    margin-top: 4px;
+  }
+  .footer__item--mb-21 {
+    margin-bottom: 13px;
   }
 }
 @media (max-width: 767px) {

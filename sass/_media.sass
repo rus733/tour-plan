@@ -103,8 +103,9 @@
         grid-column: span 5
         grid-row: 4              
 
+
+
 @media (max-width: 768px)
-  
   .container
     max-width: 700px
     width: 100%
@@ -134,7 +135,6 @@
     width: 340px 
     height: 210px
     padding: 29px 22px 30px 24px
-
   .map
     width: 340px
     height: 210px
@@ -181,27 +181,88 @@
     margin-top: 4px
   .activities
     padding-top: 40px
-    padding-bottom: 60px
+    padding-bottom: 49px
     padding-left: 37px
     padding-right: 36px
     &-wrapper
       width: 100%
       margin: 0 auto
-
     &__title
       margin-bottom: 58px 
-     
   .card
     width: 48%
     height: 255px
-  
     &__button
       margin-left: 2px 
       margin-right: 0px
       padding: 7px 20px 
   .footer
+    padding-top: 75px
+    &-wrapper
+      grid-template-columns: repeat(12, 1fr)
+      grid-row-gap: 10px
+      grid-column-gap: 10px
     &__input
-      flex-basis: 47%    
+      flex-basis: 47%     
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+      width: 100px
+      height: 108px
+      margin-top: 0px 
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 10
+        align-self: center
+        justify-self: start
+        margin-left: 70px
+        margin-top: 8px
+      &-links
+        margin-top: 3px  
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 3
+      margin-top: 40px
+
+    &__additional
+      grid-column: span 5
+      margin-top: 40px
+      margin-left: 22px 
+    &__legal
+      grid-column: span 4
+      justify-self: start
+      margin-top: 40px
+      margin-left: 25px      
+    &__contact
+      &-details
+        grid-column: span 9 
+        grid-row: 3
+        margin-top: 50px
+      &-form
+        grid-column: span 5
+        grid-row: 4              
+    &__title
+      margin-top: 0px
+      &--inline
+        margin: 0px 43px 0 0
+      &--mb-4
+        margin-bottom: 35px  
+    &__contact
+      &-form
+        margin-top: 25px
+        margin-left: -3px
+    &__icon
+      &-wrapper
+        margin-left: 7px
+        margin-top: 4px
+    &__item
+      &--mb-21
+        margin-bottom: 13px    
+
+
+           
+               
 
     
           
@@ -487,6 +548,7 @@
     padding-bottom: 60px
     padding-left: 5px
     padding-right: 5px
+
     &__title
       font-style: normal
       font-weight: bold
