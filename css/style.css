@@ -1263,6 +1263,17 @@ template {
     width: 100%;
   }
 
+  body {
+    padding-top: 78px;
+  }
+
+  .navbar--mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
   .navbar-menu {
     padding-top: 21px;
     padding-bottom: 22px;
@@ -1815,7 +1826,7 @@ template {
 
   .activities {
     padding-top: 0px;
-    padding-bottom: 60px;
+    padding-bottom: 38px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -1865,5 +1876,25 @@ template {
     grid-column: 1;
     width: 160px;
     flex-basis: 50%;
+  }
+
+  .footer {
+    display: inline-grid;
+    padding-top: 68px;
+  }
+  .footer__logo {
+    margin-left: 0px;
+  }
+  .footer__social-network {
+    grid-row: 2/3;
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+  .footer__social-links {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .footer__title--inline {
+    grid-row: 2;
   }
 }/*# sourceMappingURL=style.css.map */

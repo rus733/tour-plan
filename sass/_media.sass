@@ -109,7 +109,18 @@
   .container
     max-width: 700px
     width: 100%
+  body
+    padding-top: 78px  
   .navbar
+    &--mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+
+
     &-menu
       padding-top: 21px
       padding-bottom: 22px 
@@ -119,6 +130,8 @@
       &__search
         margin-left: auto
         margin-right: 73px
+    
+
   .stars 
     flex-basis: 100%
   .hotel
@@ -261,8 +274,6 @@
         margin-bottom: 13px    
 
 
-           
-               
 
     
           
@@ -403,6 +414,8 @@
       padding-top: 23px
       padding-right: 8px
       padding-left: 5px 
+
+
   .menu
     &-button
       padding-top: 4px            
@@ -545,7 +558,7 @@
           margin-right: -89px
   .activities
     padding-top: 0px
-    padding-bottom: 60px
+    padding-bottom: 38px
     padding-left: 5px
     padding-right: 5px
 
@@ -579,6 +592,7 @@
       &:nth-of-type(1)
         padding: 7px 20px 6px 18px
   .footer
+
     &__info
       grid-row: 8
       grid-column: 1
@@ -589,34 +603,28 @@
       grid-row: 9
       grid-column: 1 
       width: 160px
-      flex-basis: 50% 
-      
+      flex-basis: 50%
+
+
+  .footer
+    display: inline-grid
+    padding-top: 68px
+    &__logo
+      margin-left: 0px
+    &__social
+      &-network
+        grid-row: 2 / 3
+        margin-left: 0px
+        margin-top: 32px
+      &-links    
+        grid-column: 1
+        grid-row: 3
+    &__title
+      &--inline
+        grid-row: 2
+        
         
 
 
-             
-        
 
-          
-
-
-
-      
-
-
-
-
-
-    
-  
-
-        
-  
-
-          
-
-  
-    
-
-            
 
