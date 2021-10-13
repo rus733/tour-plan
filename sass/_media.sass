@@ -110,7 +110,7 @@
     max-width: 700px
     width: 100%
   body
-    padding-top: 78px  
+    padding-top: 161px  
   .navbar
     &--mobile
       &_fixed
@@ -405,8 +405,14 @@
       grid-column: 1     
                         
 @media (max-width: 320px)
+
+  body
+    padding-top: 70px  
   .container
     width: 92%
+
+  body
+    padding-top: 70px   
   .logo
     width: 99px
   .navbar
@@ -592,23 +598,23 @@
       &:nth-of-type(1)
         padding: 7px 20px 6px 18px
   .footer
-
+    &__legal
+      margin: 0
     &__info
       grid-row: 8
       grid-column: 1
       flex-basis: 100% 
       
-
     &__button
       grid-row: 9
       grid-column: 1 
       width: 160px
       flex-basis: 50%
-
-
   .footer
-    display: inline-grid
     padding-top: 68px
+    &-wrapper
+      margin-left: 5px
+      
     &__logo
       margin-left: 0px
     &__social
@@ -616,12 +622,51 @@
         grid-row: 2 / 3
         margin-left: 0px
         margin-top: 32px
+        margin-bottom: 17px
+        flex-direction: column
       &-links    
         grid-column: 1
         grid-row: 3
+    &__ul
+      margin-top: 0px    
+    &__legal
+      margin-bottom: 15px    
+    &__additional
+      margin: 0 0 0px 0 
+    &__categories
+      margin-top: 20px 
+    &__contact
+      &-details
+        width: 95%
+        grid-column: 1
+        grid-row: 6
+        justify-self: start
+        margin-top: 30px
+      &-form
+        width: 285px
+    &__input  
     &__title
       &--inline
         grid-row: 2
+        margin-bottom: 23px
+      &--mb-4
+        margin-bottom: 16px  
+    &__text
+      width: 100%
+      margin-bottom: 20px
+    &__item--mb-21
+      margin-bottom: 20px 
+    &__icon
+      &-wrapper
+        min-width: 30px
+        margin-left: 5px 
+    &__message
+      
+
+      margin-bottom: 45px    
+
+      
+
         
         
 

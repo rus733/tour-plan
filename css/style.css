@@ -1012,9 +1012,14 @@ template {
   align-items: start;
   grid-row: 2/4;
   grid-column: span 2;
+  margin-left: 5px;
+}
+.footer__additional {
+  margin-left: 5px;
 }
 .footer__legal {
   justify-self: end;
+  margin-right: 5px;
 }
 .footer__contact-details {
   grid-column: span 2;
@@ -1043,15 +1048,17 @@ template {
   text-transform: uppercase;
 }
 .footer__title--inline {
-  margin: 0 50px 0 0;
+  margin: 0 45px 0 0;
 }
 .footer__title--mb-3 {
   margin-bottom: 25px;
   margin-top: 10px;
+  margin-left: -3px;
 }
 .footer__title--mb-4 {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: 5px;
 }
 .footer__item {
   display: flex;
@@ -1070,7 +1077,7 @@ template {
   margin-left: 0px;
 }
 .footer__icon-wrapper {
-  min-width: 40px;
+  min-width: 35px;
   margin-left: 5px;
   margin-top: 5px;
 }
@@ -1264,7 +1271,7 @@ template {
   }
 
   body {
-    padding-top: 78px;
+    padding-top: 161px;
   }
 
   .navbar--mobile_fixed {
@@ -1631,8 +1638,16 @@ template {
   }
 }
 @media (max-width: 320px) {
+  body {
+    padding-top: 70px;
+  }
+
   .container {
     width: 92%;
+  }
+
+  body {
+    padding-top: 70px;
   }
 
   .logo {
@@ -1866,6 +1881,9 @@ template {
     padding: 7px 20px 6px 18px;
   }
 
+  .footer__legal {
+    margin: 0;
+  }
   .footer__info {
     grid-row: 8;
     grid-column: 1;
@@ -1879,8 +1897,10 @@ template {
   }
 
   .footer {
-    display: inline-grid;
     padding-top: 68px;
+  }
+  .footer-wrapper {
+    margin-left: 5px;
   }
   .footer__logo {
     margin-left: 0px;
@@ -1889,12 +1909,54 @@ template {
     grid-row: 2/3;
     margin-left: 0px;
     margin-top: 32px;
+    margin-bottom: 17px;
+    flex-direction: column;
   }
   .footer__social-links {
     grid-column: 1;
     grid-row: 3;
   }
+  .footer__ul {
+    margin-top: 0px;
+  }
+  .footer__legal {
+    margin-bottom: 15px;
+  }
+  .footer__additional {
+    margin: 0 0 0px 0;
+  }
+  .footer__categories {
+    margin-top: 20px;
+  }
+  .footer__contact-details {
+    width: 95%;
+    grid-column: 1;
+    grid-row: 6;
+    justify-self: start;
+    margin-top: 30px;
+  }
+  .footer__contact-form {
+    width: 285px;
+  }
   .footer__title--inline {
     grid-row: 2;
+    margin-bottom: 23px;
+  }
+  .footer__title--mb-4 {
+    margin-bottom: 16px;
+  }
+  .footer__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__item--mb-21 {
+    margin-bottom: 20px;
+  }
+  .footer__icon-wrapper {
+    min-width: 30px;
+    margin-left: 5px;
+  }
+  .footer__message {
+    margin-bottom: 45px;
   }
 }/*# sourceMappingURL=style.css.map */
