@@ -996,7 +996,7 @@ template {
 .footer__logo {
   width: 150px;
   grid-row: 1/3;
-  align-self: stretch;
+  align-self: center;
 }
 .footer__categories {
   grid-row: 1/4;
@@ -1026,6 +1026,7 @@ template {
 }
 .footer__contact-form {
   grid-column: span 2;
+  margin-bottom: 72px;
 }
 .footer__form {
   display: flex;
@@ -1069,12 +1070,18 @@ template {
   line-height: 160%;
   color: #BDBDBD;
 }
+.footer__item--mb-22 {
+  margin-bottom: 20px;
+}
 .footer__item--mb-2 {
   margin-bottom: 20px;
 }
 .footer__item--mb-21 {
   margin-bottom: 10px;
   margin-left: 0px;
+}
+.footer__tel {
+  flex-direction: column;
 }
 .footer__icon-wrapper {
   min-width: 35px;
@@ -1088,6 +1095,7 @@ template {
   line-height: 160%;
   color: #BDBDBD;
   margin-bottom: 22px;
+  margin-left: -3px;
 }
 .footer__link {
   text-decoration: none;
@@ -1101,6 +1109,11 @@ template {
   height: 50px;
   margin-bottom: 15px;
   flex-basis: 47%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 .footer__message {
   width: 539px;
@@ -1112,6 +1125,11 @@ template {
   flex-basis: 100%;
   margin-bottom: 22px;
   resize: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 .footer__button {
   min-width: 160px;
@@ -1131,6 +1149,35 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+.footer__bottom {
+  grid-row: 5/6;
+  grid-column: 2/5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer__line {
+  flex-basis: 50%;
+  justify-content: space-between;
+  margin-left: 130px;
+}
+.footer__email {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+.footer__number {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.number-link {
+  text-decoration: none;
+  color: #BDBDBD;
 }
 
 @media (max-width: 1200px) {
@@ -1153,8 +1200,56 @@ template {
     height: 230px;
   }
 
+  .footer-wrapper {
+    grid-template-columns: repeat(9, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+  }
+  .footer__logo {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    justify-items: center;
+  }
+  .footer__social-network {
+    grid-row: 2/3;
+    grid-column: 4/8;
+    align-self: center;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .footer__categories {
+    grid-row: 1/3;
+    grid-column: 2/4;
+    margin-left: 30px;
+  }
+  .footer__additional {
+    grid-row: 1/2;
+    grid-column: 4/7;
+    margin-left: 30px;
+  }
+  .footer__legal {
+    grid-row: 1/2;
+    grid-column: 7/10;
+  }
+  .footer__contact-details {
+    grid-column: 1/4;
+    grid-row: 3;
+    margin-top: 30px;
+  }
+  .footer__contact-form {
+    grid-column: span 6;
+    grid-row: 3;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 52px;
+  }
   .footer__input {
-    flex-basis: 100%;
+    flex-basis: 47%;
+  }
+  .footer__bottom {
+    grid-row: 4;
+    grid-column: span 9;
   }
 }
 @media (max-width: 992px) {
@@ -1229,9 +1324,13 @@ template {
     height: 255px;
   }
 
+  .footer {
+    padding-top: 75px;
+  }
   .footer-wrapper {
-    grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
   }
   .footer__input {
     flex-basis: 47%;
@@ -1239,29 +1338,77 @@ template {
   .footer__logo {
     grid-row: 1/2;
     grid-column: span 2;
+    align-self: center;
+    width: 100px;
+    height: 108px;
+    margin-top: 0px;
   }
   .footer__social-network {
     grid-row: 1/2;
-    grid-column: span 4;
+    grid-column: 3/12;
     align-self: center;
+    justify-self: start;
+    margin-left: 70px;
+    margin-top: 8px;
+  }
+  .footer__social-links {
+    margin-top: 3px;
   }
   .footer__categories {
     grid-row: 2/3;
-    grid-column: span 2;
+    grid-column: span 3;
+    margin-top: 40px;
+    margin-left: 0;
   }
   .footer__additional {
-    grid-column: span 2;
+    grid-row: 2/3;
+    grid-column: span 5;
+    margin-top: 40px;
+    margin-left: 22px;
   }
   .footer__legal {
-    grid-column: span 2;
+    grid-row: 2/3;
+    grid-column: span 4;
+    justify-self: start;
+    margin-top: 40px;
+    margin-left: 25px;
   }
   .footer__contact-details {
-    grid-column: span 5;
+    grid-column: span 9;
     grid-row: 3;
+    margin-top: 50px;
   }
   .footer__contact-form {
     grid-column: span 5;
     grid-row: 4;
+  }
+  .footer__title {
+    margin-top: 0px;
+  }
+  .footer__title--inline {
+    margin: 0px 43px 0 0;
+  }
+  .footer__title--mb-4 {
+    margin-bottom: 35px;
+  }
+  .footer__contact-form {
+    margin-top: 25px;
+    margin-left: -3px;
+    margin-bottom: 0;
+  }
+  .footer__icon-wrapper {
+    margin-left: 7px;
+    margin-top: 4px;
+  }
+  .footer__item--mb-21 {
+    margin-bottom: 13px;
+  }
+  .footer__bottom {
+    grid-row: 5;
+    grid-column: span 12;
+  }
+  .footer__line {
+    margin-left: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1416,13 +1563,14 @@ template {
   .footer__logo {
     grid-row: 1/2;
     grid-column: span 2;
+    align-self: center;
     width: 100px;
     height: 108px;
     margin-top: 0px;
   }
   .footer__social-network {
     grid-row: 1/2;
-    grid-column: span 10;
+    grid-column: 3/12;
     align-self: center;
     justify-self: start;
     margin-left: 70px;
@@ -1437,6 +1585,7 @@ template {
     margin-top: 40px;
   }
   .footer__additional {
+    grid-row: 2/3;
     grid-column: span 5;
     margin-top: 40px;
     margin-left: 22px;
@@ -1453,8 +1602,9 @@ template {
     margin-top: 50px;
   }
   .footer__contact-form {
-    grid-column: span 5;
+    grid-column: span 9;
     grid-row: 4;
+    margin-bottom: 42px;
   }
   .footer__title {
     margin-top: 0px;
@@ -1478,6 +1628,10 @@ template {
   }
 }
 @media (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+
   .container,
 .newsletter-wrapper {
     max-width: 576px;
@@ -1550,15 +1704,16 @@ template {
   }
 
   .booking {
-    width: 100%;
+    width: 50%;
   }
 
   .map {
-    width: 100%;
+    width: 47%;
   }
 
   .newsletter {
     padding: 76px 0 83px 0;
+    height: 320px;
   }
   .newsletter__title {
     margin-bottom: 37px;
@@ -1566,7 +1721,7 @@ template {
   .newsletter-wrapper {
     display: flex;
     max-width: 576px;
-    width: 100%;
+    width: 92%;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1590,12 +1745,48 @@ template {
   }
 
   .footer__input {
-    flex-basis: 100%;
+    flex-basis: 47%;
+  }
+  .footer__bottom {
+    grid-row: 5;
+    grid-column: span 12;
+  }
+  .footer__line {
+    flex-basis: 70%;
   }
 }
 @media (max-width: 576px) {
+  .container,
+.newsletter-wrapper {
+    width: 92%;
+  }
+
+  .booking {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  .hotel-right {
+    flex-direction: column;
+  }
+
+  .newsletter {
+    height: 320px;
+  }
+  .newsletter__subscribe {
+    width: 280px;
+  }
+
+  .footer {
+    width: 92%;
+  }
   .footer-wrapper {
     grid-template-columns: 1fr;
+    margin-left: 100px;
   }
   .footer__logo {
     grid-row: 1;
@@ -1635,6 +1826,15 @@ template {
   .footer__info {
     grid-row: 9;
     grid-column: 1;
+  }
+  .footer__bottom {
+    grid-row: 8;
+    grid-column: span 12;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__line {
+    flex-basis: 60%;
   }
 }
 @media (max-width: 320px) {
@@ -1900,6 +2100,7 @@ template {
     padding-top: 68px;
   }
   .footer-wrapper {
+    grid-template-columns: 1fr;
     margin-left: 5px;
   }
   .footer__logo {
@@ -1937,6 +2138,7 @@ template {
   }
   .footer__contact-form {
     width: 285px;
+    margin-bottom: 30px;
   }
   .footer__title--inline {
     grid-row: 2;
@@ -1957,6 +2159,16 @@ template {
     margin-left: 5px;
   }
   .footer__message {
-    margin-bottom: 45px;
+    margin-bottom: 15px;
+  }
+  .footer__info {
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    order: 2;
+  }
+  .footer__line {
+    width: 100px;
   }
 }/*# sourceMappingURL=style.css.map */

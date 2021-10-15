@@ -12,9 +12,51 @@
   .card
     width: 230px
     height: 230px
-  .footer 
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(9, 1fr)
+      grid-row-gap: 10px
+      grid-column-gap: 10px 
+      justify-content: center
+    &__logo
+      grid-row: 1 / 3
+      grid-column: 1 / 2
+      justify-items: center
+    &__social
+      &-network
+        grid-row: 2 / 3
+        grid-column: 4 / 8
+        align-self: center
+        margin-top: 20px
+        margin-left: 30px
+    &__categories
+      grid-row: 1 / 3
+      grid-column: 2 / 4
+      margin-left: 30px
+    &__additional
+      grid-row: 1 / 2
+      grid-column: 4 / 7
+      margin-left: 30px
+    &__legal
+      grid-row: 1 / 2
+      grid-column: 7 / 10  
+    &__contact
+      &-details
+        grid-column: 1 / 4 
+        grid-row: 3
+        margin-top: 30px 
+      &-form
+        grid-column: span 6
+        grid-row: 3 
+        margin-top: 30px
+        margin-left: 30px
+        margin-bottom: 52px             
     &__input
-      flex-basis: 100%  
+      flex-basis: 47%
+    &__bottom
+      grid-row: 4 
+      grid-column: span 9
+      
 
 
 
@@ -73,35 +115,84 @@
     width: 340px
     height: 255px
   .footer
+
+    padding-top: 75px
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
-      grid-row-gap: 40px
+      grid-template-columns: repeat(12, 1fr)
+      grid-row-gap: 10px
+      grid-column-gap: 10px
+
+
     &__input
-      flex-basis: 47%
-      
+      flex-basis: 47%     
     &__logo
       grid-row: 1 / 2
-      grid-column: span 2 
-
+      grid-column: span 2
+      align-self: center
+      width: 100px
+      height: 108px
+      margin-top: 0px
+    &__image
+        
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 4
+        grid-column: 3 / 12
         align-self: center
+        justify-self: start
+        margin-left: 70px
+        margin-top: 8px
+      &-links
+        margin-top: 3px  
     &__categories
       grid-row: 2 / 3
-      grid-column: span 2
+      grid-column: span 3
+      margin-top: 40px
+      margin-left: 0
+
     &__additional
-      grid-column: span 2
+      grid-row: 2 / 3
+      grid-column: span 5
+      margin-top: 40px
+      margin-left: 22px 
     &__legal
-      grid-column: span 2    
+      grid-row: 2 / 3
+      grid-column: span 4
+      justify-self: start
+      margin-top: 40px
+      margin-left: 25px      
     &__contact
       &-details
-        grid-column: span 5 
+        grid-column: span 9 
         grid-row: 3
+        margin-top: 50px
       &-form
         grid-column: span 5
         grid-row: 4              
+    &__title
+      margin-top: 0px
+      &--inline
+        margin: 0px 43px 0 0
+      &--mb-4
+        margin-bottom: 35px  
+    &__contact
+      &-form
+        margin-top: 25px
+        margin-left: -3px
+        margin-bottom: 0
+
+    &__icon
+      &-wrapper
+        margin-left: 7px
+        margin-top: 4px
+    &__item
+      &--mb-21
+        margin-bottom: 13px
+    &__bottom
+      grid-row: 5
+      grid-column: span 12
+    &__line
+      margin-left: 0          
 
 
 
@@ -220,13 +311,16 @@
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
+      align-self: center
       width: 100px
       height: 108px
-      margin-top: 0px 
+      margin-top: 0px
+    &__image
+        
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 10
+        grid-column: 3 / 12
         align-self: center
         justify-self: start
         margin-left: 70px
@@ -239,6 +333,7 @@
       margin-top: 40px
 
     &__additional
+      grid-row: 2 / 3
       grid-column: span 5
       margin-top: 40px
       margin-left: 22px 
@@ -253,8 +348,9 @@
         grid-row: 3
         margin-top: 50px
       &-form
-        grid-column: span 5
-        grid-row: 4              
+        grid-column: span 9
+        grid-row: 4
+        margin-bottom: 42px              
     &__title
       margin-top: 0px
       &--inline
@@ -280,10 +376,12 @@
           
             
 @media (max-width: 767px)
+  body
+    padding-top: 60px
   .container,
   .newsletter-wrapper
     max-width: 576px
-    width: 92% 
+    width: 92%   
   .logo
     width: 99px
   .navbar
@@ -318,7 +416,7 @@
   .rating
     display: none   
   .hotel
-    &-righ
+    &-right
     &-name
       flex-basis: 100% 
     &-wrapper
@@ -336,17 +434,18 @@
       height: 250px 
       margin-bottom: 20px
   .booking 
-    width: 100%
+    width: 50%
   .map
-    width: 100%    
+    width: 47%    
   .newsletter
     padding: 76px 0 83px 0
+    height: 320px
     &__title
       margin-bottom: 37px   
     &-wrapper 
       display: flex
       max-width: 576px
-      width: 100%
+      width: 92%
       flex-direction: column
       align-items: flex-start
   .reviews
@@ -363,15 +462,39 @@
           margin-right: -65px 
   .card
     width: 100%
-
   .footer 
     &__input
-      flex-basis: 100% 
+      flex-basis: 47%
+    &__bottom
+      grid-row: 5
+      grid-column: span 12
+    &__line
+      flex-basis: 70%    
 
 @media (max-width: 576px)
+  .container,
+  .newsletter-wrapper
+    width: 92% 
+  .booking 
+    width: 100%
+    margin-bottom: 20px
+  .map
+    width: 100%  
+  .hotel
+    &-right
+      flex-direction: column  
+  .newsletter
+    height: 320px
+    &__subscribe
+      width: 280px
+
   .footer 
+    width: 92% 
     &-wrapper
       grid-template-columns: 1fr
+      margin-left: 100px
+
+
     &__logo
       grid-row: 1
       grid-column: 1
@@ -383,7 +506,7 @@
         grid-column: 1 
     &__legal
       grid-row: 3
-      grid-column: 1          
+      grid-column: 1       
     &__additional
       grid-row: 4       
       grid-column: 1
@@ -402,7 +525,17 @@
       grid-column: 1 
     &__info
       grid-row: 9
-      grid-column: 1     
+      grid-column: 1 
+    &__bottom
+      grid-row: 8
+      grid-column: span 12
+      display: flex
+      flex-wrap: wrap
+    &__line
+      flex-basis: 60%  
+        
+      
+
                         
 @media (max-width: 320px)
 
@@ -613,6 +746,7 @@
   .footer
     padding-top: 68px
     &-wrapper
+      grid-template-columns: 1fr
       margin-left: 5px
       
     &__logo
@@ -644,6 +778,7 @@
         margin-top: 30px
       &-form
         width: 285px
+        margin-bottom: 30px
     &__input  
     &__title
       &--inline
@@ -661,9 +796,15 @@
         min-width: 30px
         margin-left: 5px 
     &__message
-      
+      margin-bottom: 15px  
+    &__info
+      order: 1
+      margin-bottom: 15px
+    &__button
+      order: 2 
+    &__line   
+      width: 100px
 
-      margin-bottom: 45px    
 
       
 
