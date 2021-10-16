@@ -1160,9 +1160,9 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  z-index: 110;
 }
 .footer__line {
-  flex-basis: 50%;
   justify-content: space-between;
   margin-left: 130px;
 }
@@ -1174,12 +1174,20 @@ template {
   margin-top: 0;
   margin-bottom: 0;
 }
+.footer__card {
+  z-index: 110;
+}
 
 .number-link {
   text-decoration: none;
   color: #BDBDBD;
 }
 
+@media (max-width: 1920px) {
+  .number-link {
+    display: inline-block;
+  }
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1379,7 +1387,7 @@ template {
     margin-top: 50px;
   }
   .footer__contact-form {
-    grid-column: span 5;
+    grid-column: span 8;
     grid-row: 4;
   }
   .footer__title {
@@ -1783,25 +1791,32 @@ template {
 
   .footer {
     width: 92%;
+    margin-left: 22px;
   }
   .footer-wrapper {
     grid-template-columns: 1fr;
-    margin-left: 100px;
+    margin-left: 0px;
+    justify-content: unset;
+    align-self: start;
   }
   .footer__logo {
     grid-row: 1;
     grid-column: 1;
+    margin-left: 22px;
+    margin-bottom: 30px;
   }
   .footer__input {
     flex-basis: 100%;
   }
   .footer__social-network {
+    margin-left: 22px;
     grid-row: 2;
     grid-column: 1;
   }
   .footer__legal {
     grid-row: 3;
     grid-column: 1;
+    margin-left: 22px;
   }
   .footer__additional {
     grid-row: 4;
@@ -1810,31 +1825,63 @@ template {
   .footer__categories {
     grid-row: 5;
     grid-column: 1;
+    margin-left: 22px;
   }
   .footer__contact-details {
+    max-width: 80%;
     grid-row: 6;
     grid-column: 1;
+    margin-left: 22px;
   }
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
+    max-width: 90%;
+    margin-left: 22px;
+  }
+  .footer__message {
+    width: 100%;
   }
   .footer__button {
-    grid-row: 8;
     grid-column: 1;
   }
   .footer__info {
-    grid-row: 9;
     grid-column: 1;
   }
   .footer__bottom {
     grid-row: 8;
-    grid-column: span 12;
+    grid-column: 1;
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 22px;
   }
-  .footer__line {
-    flex-basis: 60%;
+}
+@media (max-width: 412px) {
+  .footer__social-network {
+    margin-top: 32px;
+    margin-bottom: 17px;
+    flex-direction: column;
+  }
+  .footer__social-links {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .footer__title--inline {
+    margin-bottom: 20px;
+  }
+  .footer__bottom {
+    width: 100%;
+  }
+}
+@media (max-width: 342px) {
+  .footer__info {
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    order: 2;
   }
 }
 @media (max-width: 320px) {
@@ -1843,7 +1890,7 @@ template {
   }
 
   .container {
-    width: 92%;
+    max-width: 92%;
   }
 
   body {
@@ -2081,6 +2128,11 @@ template {
     padding: 7px 20px 6px 18px;
   }
 
+  .footer {
+    width: 100%;
+    padding-top: 68px;
+    margin-left: 0;
+  }
   .footer__legal {
     margin: 0;
   }
@@ -2095,21 +2147,19 @@ template {
     width: 160px;
     flex-basis: 50%;
   }
-
-  .footer {
-    padding-top: 68px;
-  }
   .footer-wrapper {
     grid-template-columns: 1fr;
     margin-left: 5px;
+    width: 100%;
   }
   .footer__logo {
     margin-left: 0px;
+    margin-bottom: 0;
   }
   .footer__social-network {
     grid-row: 2/3;
     margin-left: 0px;
-    margin-top: 32px;
+    margin-top: 35px;
     margin-bottom: 17px;
     flex-direction: column;
   }
@@ -2118,27 +2168,35 @@ template {
     grid-row: 3;
   }
   .footer__ul {
-    margin-top: 0px;
+    margin-top: 17px;
   }
   .footer__legal {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .footer__additional {
     margin: 0 0 0px 0;
   }
   .footer__categories {
     margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 5px;
   }
   .footer__contact-details {
-    width: 95%;
+    max-width: 95%;
     grid-column: 1;
     grid-row: 6;
     justify-self: start;
     margin-top: 30px;
+    margin-left: 3px;
   }
   .footer__contact-form {
-    width: 285px;
-    margin-bottom: 30px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  .footer__form {
+    width: 95%;
+    margin-left: 0;
   }
   .footer__title--inline {
     grid-row: 2;
@@ -2148,8 +2206,9 @@ template {
     margin-bottom: 16px;
   }
   .footer__text {
-    width: 100%;
+    width: 95%;
     margin-bottom: 20px;
+    margin-left: 3px;
   }
   .footer__item--mb-21 {
     margin-bottom: 20px;
@@ -2168,7 +2227,11 @@ template {
   .footer__button {
     order: 2;
   }
+  .footer__bottom {
+    width: 100%;
+    margin-left: 0;
+  }
   .footer__line {
-    width: 100px;
+    margin-bottom: 7px;
   }
 }/*# sourceMappingURL=style.css.map */
