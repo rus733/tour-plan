@@ -1789,10 +1789,6 @@ template {
     width: 280px;
   }
 
-  .footer {
-    width: 92%;
-    margin-left: 22px;
-  }
   .footer-wrapper {
     grid-template-columns: 1fr;
     margin-left: 0px;
@@ -1859,9 +1855,20 @@ template {
   }
 }
 @media (max-width: 412px) {
+  .activities {
+    padding-top: 0px;
+    padding-bottom: 38px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer__logo {
+    margin-left: 5px;
+  }
   .footer__social-network {
     margin-top: 32px;
     margin-bottom: 17px;
+    margin-left: 5px;
     flex-direction: column;
   }
   .footer__social-links {
@@ -1871,17 +1878,31 @@ template {
   .footer__title--inline {
     margin-bottom: 20px;
   }
+  .footer__title--mb-4 {
+    margin-left: 0;
+  }
+  .footer__legal {
+    margin-left: 5px;
+  }
+  .footer__categories {
+    margin-left: 5px;
+  }
+  .footer__additional {
+    margin-left: 5px;
+  }
+  .footer__contact-details {
+    margin-left: 5px;
+  }
+  .footer__contact-form {
+    margin-left: 5px;
+    max-width: 100%;
+  }
+  .footer__form {
+    margin-left: 0px;
+  }
   .footer__bottom {
     width: 100%;
-  }
-}
-@media (max-width: 342px) {
-  .footer__info {
-    order: 1;
-    margin-bottom: 15px;
-  }
-  .footer__button {
-    order: 2;
+    margin-left: 5px;
   }
 }
 @media (max-width: 320px) {
@@ -2160,15 +2181,16 @@ template {
     grid-row: 2/3;
     margin-left: 0px;
     margin-top: 35px;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
     flex-direction: column;
   }
   .footer__social-links {
     grid-column: 1;
     grid-row: 3;
+    margin-left: 3px;
   }
   .footer__ul {
-    margin-top: 17px;
+    margin-top: 0px;
   }
   .footer__legal {
     margin-bottom: 20px;
@@ -2177,17 +2199,18 @@ template {
     margin: 0 0 0px 0;
   }
   .footer__categories {
-    margin-top: 20px;
+    margin-top: 17px;
     margin-left: 0;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
   .footer__contact-details {
     max-width: 95%;
     grid-column: 1;
     grid-row: 6;
     justify-self: start;
-    margin-top: 30px;
-    margin-left: 3px;
+    margin-top: 25px;
+    margin-left: 1px;
+    margin-bottom: 10px;
   }
   .footer__contact-form {
     max-width: 100%;
@@ -2200,10 +2223,13 @@ template {
   }
   .footer__title--inline {
     grid-row: 2;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
   .footer__title--mb-4 {
     margin-bottom: 16px;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 22px;
   }
   .footer__text {
     width: 95%;
