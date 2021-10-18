@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>255Best Tour Plan - Hotel Booking</title>
+    <title>261Best Tour Plan - Hotel Booking</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <header class="navbar navbar--mobile_fixed">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -31,7 +31,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar-top__search">
+          <form
+            action="#"
+            class="search navbar-top__search navbar-top__search_mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -43,7 +46,10 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar-top__user">
+          <a
+            href="#"
+            class="user navbar-top__user navbar-top__user_mobile_hidden"
+          >
             <img
               src="img/user-avatar.png"
               alt="Avatar: Nathan"
@@ -66,6 +72,40 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <a
+                href="#"
+                class="user navbar-top__user navbar-top__user_mobile_visible"
+              >
+                <img
+                  src="img/user-avatar.png"
+                  alt="Avatar: Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name user__name_light">Nathan</span>
+              </a>
+              <!-- /.user2 -->
+            </li>
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <form
+                action="#"
+                class="
+                  search
+                  navbar-top__search navbar-top__search_mobile_visible
+                "
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
+
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>

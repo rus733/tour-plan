@@ -202,7 +202,7 @@
   body
     padding-top: 161px  
   .navbar
-    &--mobile
+    &__mobile
       &_fixed
         position: fixed
         top: 0
@@ -216,10 +216,24 @@
       padding-bottom: 22px 
       padding-left: 15px 
       padding-right: 15px
+      //flex-direction: column
+      //&__item
+       // margin-bottom: 20px
+
     &-top
       &__search
         margin-left: auto
         margin-right: 73px
+
+    &-bottom
+      //display: none
+      //position: fixed 
+      //left: 0
+      //right: 0
+      //bottom: 0
+      //top: 78px
+      //&--visible
+        //display: block   
     
 
   .stars 
@@ -379,21 +393,70 @@
     padding-top: 60px
   .container,
   .newsletter-wrapper
-    max-width: 576px
+    max-width: 700px
     width: 92%   
   .logo
     width: 99px
   .navbar
+    &__mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+        
+    &-bottom
+      display: none
+      position: fixed 
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 10px
+      &--visible
+        display: block       
     &-menu
-      display: none 
-    &-top
-      &__search, &__user
-        display: none  
-  .navbar
+      flex-direction: column
+      &__item
+        margin-bottom: 18px
+        &_mobile
+          &_visible
+            display: block
     &-top
       padding-top: 23px
       padding-bottom: 30px 
       padding-right: 12px
+      &__search
+        margin-right: auto
+        margin-left: auto
+      &__user, &__search
+        &_mobile
+          &_hidden
+            display: none
+          &_visible
+            display: flex
+            
+      &__search      
+        &_mobile
+          &_visible
+            margin-bottom: 20px
+
+      &__user
+        flex-direction: column
+        justify-content: center
+  .user
+    &__name
+      &_light
+        margin-left: 0
+        color: $light
+        margin-bottom: 10px
+    &__avatar
+      margin-bottom: 10px  
+  .search 
+    &__input
+      width: 245px
+      
   .menu
     &-button
       display: flex
@@ -588,6 +651,17 @@
 
 
 @media (max-width: 342px)
+  .navbar
+    &-bottom
+      top: 70px
+  .reviews
+    &-slider
+      &__item
+        max-width: 95%
+        padding: 0 0px 33px
+      &__text
+        width: 219px
+
 
 
 @media (max-width: 320px)
@@ -809,7 +883,7 @@
         grid-row: 2 / 3
         margin-left: 0px
         margin-top: 35px
-        margin-bottom: 20px
+        margin-bottom: 17px
         flex-direction: column
       &-links    
         grid-column: 1
@@ -824,7 +898,7 @@
     &__categories
       margin-top: 17px 
       margin-left: 0
-      margin-bottom: 15px
+      margin-bottom: 5px
 
 
     &__contact
@@ -835,7 +909,6 @@
         justify-self: start
         margin-top: 25px
         margin-left: 1px
-        margin-bottom: 10px
       &-form
         max-width: 100%
         margin-bottom: 10px
