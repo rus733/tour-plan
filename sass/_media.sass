@@ -382,12 +382,6 @@
       &--mb-21
         margin-bottom: 13px    
 
-
-
-    
-          
-          
-            
 @media (max-width: 767px)
   body
     padding-top: 60px
@@ -398,21 +392,20 @@
   .logo
     width: 99px
   .navbar
-    &__mobile
+    &_mobile
       &_fixed
         position: fixed
         top: 0
         left: 0
         right: 0
-        z-index: 99
-        
+        z-index: 99    
     &-bottom
       display: none
       position: fixed 
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 70px
       padding-top: 10px
       &--visible
         display: block       
@@ -423,13 +416,31 @@
         &_mobile
           &_visible
             display: block
+      &__search      
+        &_mobile
+          &_visible
+            margin-bottom: 20px
+      &__search
+        margin-right: auto
+        margin-left: auto
+      &__user, &__search
+        &_mobile
+          &_visible
+            display: flex
+      &__user, &__search
+        &_mobile
+          &_hidden
+            display: none
+      &__user
+        flex-direction: column
+        justify-content: center            
     &-top
       padding-top: 23px
       padding-bottom: 30px 
       padding-right: 12px
-      &__search
-        margin-right: auto
-        margin-left: auto
+      //&__search
+       // margin-right: auto
+        //margin-left: auto
       &__user, &__search
         &_mobile
           &_hidden
@@ -437,14 +448,14 @@
           &_visible
             display: flex
             
-      &__search      
-        &_mobile
-          &_visible
-            margin-bottom: 20px
+      //&__search      
+       // &_mobile
+          //&_visible
+            //margin-bottom: 20px
 
-      &__user
-        flex-direction: column
-        justify-content: center
+      //&__user
+        //flex-direction: column
+        //justify-content: center
   .user
     &__name
       &_light

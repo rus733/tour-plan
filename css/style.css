@@ -1652,7 +1652,7 @@ template {
     width: 99px;
   }
 
-  .navbar__mobile_fixed {
+  .navbar_mobile_fixed {
     position: fixed;
     top: 0;
     left: 0;
@@ -1665,7 +1665,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 70px;
     padding-top: 10px;
   }
   .navbar-bottom--visible {
@@ -1680,27 +1680,33 @@ template {
   .navbar-menu__item_mobile_visible {
     display: block;
   }
+  .navbar-menu__search_mobile_visible {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__search {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .navbar-menu__user_mobile_visible, .navbar-menu__search_mobile_visible {
+    display: flex;
+  }
+  .navbar-menu__user_mobile_hidden, .navbar-menu__search_mobile_hidden {
+    display: none;
+  }
+  .navbar-menu__user {
+    flex-direction: column;
+    justify-content: center;
+  }
   .navbar-top {
     padding-top: 23px;
     padding-bottom: 30px;
     padding-right: 12px;
-  }
-  .navbar-top__search {
-    margin-right: auto;
-    margin-left: auto;
   }
   .navbar-top__user_mobile_hidden, .navbar-top__search_mobile_hidden {
     display: none;
   }
   .navbar-top__user_mobile_visible, .navbar-top__search_mobile_visible {
     display: flex;
-  }
-  .navbar-top__search_mobile_visible {
-    margin-bottom: 20px;
-  }
-  .navbar-top__user {
-    flex-direction: column;
-    justify-content: center;
   }
 
   .user__name_light {
