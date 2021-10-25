@@ -22,6 +22,41 @@ button {
   border: none;
 }
 
+.input {
+  background: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.message {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-color: #EC1F46;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1105,11 +1140,6 @@ template {
   color: inherit;
 }
 .footer__input {
-  background: #ffffff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
   margin-bottom: 15px;
   flex-basis: 47%;
   font-style: normal;
@@ -1121,10 +1151,6 @@ template {
 .footer__message {
   width: 539px;
   height: 123px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
   flex-basis: 100%;
   margin-bottom: 22px;
   resize: none;
@@ -1133,18 +1159,6 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
-}
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  border-radius: 4px;
-  border: none;
-  background-color: #EC1F46;
-  color: #ffffff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
 }
 .footer__info {
   font-style: normal;
@@ -1184,6 +1198,75 @@ template {
 .number-link {
   text-decoration: none;
   color: #BDBDBD;
+}
+
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 30px 88px 33px 88px;
+  background-color: #0A223D;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1920px) {
@@ -1261,6 +1344,11 @@ template {
   .footer__bottom {
     grid-row: 4;
     grid-column: span 9;
+  }
+
+  .modal__dialog {
+    max-width: 400px;
+    padding: 30px 60px 33px 60px;
   }
 }
 @media (max-width: 992px) {
@@ -1421,6 +1509,10 @@ template {
   .footer__line {
     margin-left: 0;
   }
+
+  .modal__dialog {
+    padding: 30px 60px 33px 60px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -1449,6 +1541,7 @@ template {
     margin-left: auto;
     margin-right: 73px;
   }
+
   .stars {
     flex-basis: 100%;
   }
@@ -1636,6 +1729,14 @@ template {
   .footer__item--mb-21 {
     margin-bottom: 13px;
   }
+
+  .modal__info {
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    order: 2;
+  }
 }
 @media (max-width: 767px) {
   body {
@@ -1821,6 +1922,14 @@ template {
   .footer__line {
     flex-basis: 70%;
   }
+
+  .modal__info {
+    order: 1;
+    margin-bottom: 15px;
+  }
+  .modal__button {
+    order: 2;
+  }
 }
 @media (max-width: 576px) {
   .container,
@@ -1912,6 +2021,11 @@ template {
     align-items: start;
     margin-left: 22px;
   }
+
+  .modal__dialog {
+    width: 90%;
+    padding: 30px 20px 33px 20px;
+  }
 }
 @media (max-width: 412px) {
   .activities {
@@ -1962,6 +2076,10 @@ template {
   .footer__bottom {
     width: 100%;
     margin-left: 5px;
+  }
+
+  .modal__dialog {
+    padding: 30px 20px 33px 20px;
   }
 }
 @media (max-width: 342px) {

@@ -59,6 +59,10 @@
     &__bottom
       grid-row: 4 
       grid-column: span 9
+  .modal
+    &__dialog
+      max-width: 400px
+      padding: 30px 60px 33px 60px     
       
 
 
@@ -191,7 +195,10 @@
       grid-row: 5
       grid-column: span 12
     &__line
-      margin-left: 0          
+      margin-left: 0 
+  .modal
+    &__dialog
+      padding: 30px 60px 33px 60px             
 
 
 
@@ -210,32 +217,16 @@
         right: 0
         z-index: 99
 
-
     &-menu
       padding-top: 21px
       padding-bottom: 22px 
       padding-left: 15px 
       padding-right: 15px
-      //flex-direction: column
-      //&__item
-       // margin-bottom: 20px
-
+      
     &-top
       &__search
         margin-left: auto
         margin-right: 73px
-
-    &-bottom
-      //display: none
-      //position: fixed 
-      //left: 0
-      //right: 0
-      //bottom: 0
-      //top: 78px
-      //&--visible
-        //display: block   
-    
-
   .stars 
     flex-basis: 100%
   .hotel
@@ -380,7 +371,13 @@
         margin-top: 4px
     &__item
       &--mb-21
-        margin-bottom: 13px    
+        margin-bottom: 13px 
+  .modal
+    &__info
+      order: 1
+      margin-bottom: 15px
+    &__button
+      order: 2            
 
 @media (max-width: 767px)
   body
@@ -438,24 +435,12 @@
       padding-top: 23px
       padding-bottom: 30px 
       padding-right: 12px
-      //&__search
-       // margin-right: auto
-        //margin-left: auto
       &__user, &__search
         &_mobile
           &_hidden
             display: none
           &_visible
             display: flex
-            
-      //&__search      
-       // &_mobile
-          //&_visible
-            //margin-bottom: 20px
-
-      //&__user
-        //flex-direction: column
-        //justify-content: center
   .user
     &__name
       &_light
@@ -542,7 +527,16 @@
       grid-row: 5
       grid-column: span 12
     &__line
-      flex-basis: 70%    
+      flex-basis: 70%
+  .modal
+    &__info
+      order: 1
+      margin-bottom: 15px
+    &__button
+      order: 2
+        
+      
+            
 
 @media (max-width: 576px)
   .container,
@@ -617,7 +611,10 @@
       flex-direction: column
       align-items: start
       margin-left: 22px
-    &__line
+  .modal
+    &__dialog
+      width: 90%
+      padding: 30px 20px 33px 20px 
         
 @media (max-width: 412px)
   .activities
@@ -659,6 +656,9 @@
     &__bottom
       width: 100%
       margin-left: 5px
+  .modal
+    &__dialog
+      padding: 30px 20px 33px 20px     
 
 
 @media (max-width: 342px)

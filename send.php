@@ -36,19 +36,20 @@ try {
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
     $mail->SMTPDebug = 2;
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'ikl99@mail.ru'; // Логин на почте
-    $mail->Password   = 'asasas'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'ikl99997@gmail.com'; // Логин на почте
+    $mail->Password   = '1q2w3e!@A'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('ikl99@mail.ru', 'Роман Романов'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('ikl99997@gmail.com', 'Ruslan Demchenko'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('9282716617@mail.ru');
-    $mail->addAddress('ikl99997@gmail.com');  
+    //$mail->addAddress('ikl99997@gmail.com');  
     
 
     // Отправка сообщения
@@ -69,5 +70,7 @@ else {$result = "error";}
 
 
 
+
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 // Отображение результата
-header('Location: thankyou.html');
+//header('Location: thankyou.html');
