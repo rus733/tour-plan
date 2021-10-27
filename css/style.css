@@ -48,6 +48,7 @@ button {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .form {
@@ -55,6 +56,12 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+  z-index: 1;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1144,6 +1151,9 @@ template {
   color: inherit;
 }
 .footer__input {
+  width: 100%;
+}
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 47%;
   font-style: normal;
@@ -1258,12 +1268,16 @@ template {
 }
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .modal__message {
   width: 100%;
   min-height: 123px;
+  margin-top: 15px;
   margin-bottom: 15px;
+}
+.modal__button {
+  margin-bottom: 0px;
 }
 .modal__info {
   font-style: normal;
@@ -1342,7 +1356,7 @@ template {
     margin-left: 30px;
     margin-bottom: 52px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 47%;
   }
   .footer__bottom {
@@ -1435,7 +1449,7 @@ template {
     grid-row-gap: 10px;
     grid-column-gap: 10px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 47%;
   }
   .footer__logo {
@@ -1664,7 +1678,7 @@ template {
     grid-row-gap: 10px;
     grid-column-gap: 10px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 47%;
   }
   .footer__logo {
@@ -1912,7 +1926,7 @@ template {
     width: 100%;
   }
 
-  .footer__input {
+  .footer__input-group {
     flex-basis: 47%;
   }
   .footer__bottom {
@@ -1979,7 +1993,7 @@ template {
     margin-left: 22px;
     margin-bottom: 30px;
   }
-  .footer__input {
+  .footer__input-group {
     flex-basis: 100%;
   }
   .footer__social-network {

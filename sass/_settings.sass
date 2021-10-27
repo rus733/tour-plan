@@ -39,8 +39,18 @@ button
   font-weight: bold
   font-size: 12px
   line-height: 15px
+  cursor: pointer
+  //&:hover
+    //transition: all 500ms ease 
+    //background-color: #04f82d
+    //transform: skew(-10deg)
 .form
   display: flex
   align-items: center
   justify-content: space-between
-  flex-wrap: wrap         
+  flex-wrap: wrap  
+
+.invalid
+  color: $primary
+  border-bottom: 1px solid $primary
+  z-index: 102
