@@ -42,7 +42,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'ikl99997@gmail.com'; // Логин на почте
-    $mail->Password   = '1q2w3e!@A'; // Пароль на почте
+    $mail->Password   = 'anmdqftuxknhmskx'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('ikl99997@gmail.com', 'Ruslan Demchenko'); // Адрес самой почты и имя отправителя
@@ -66,7 +66,10 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
 // Отображение результата
+
+//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
 header('Location: thankyou.html');
 
