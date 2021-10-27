@@ -47,4 +47,11 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      // close modal here
+      closeModal(event);
+    }
+  });
 });

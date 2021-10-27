@@ -531,6 +531,10 @@ template {
 .hotel-info__description {
   margin: 0 0;
 }
+.hotel-info__description--mb-15 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
@@ -1146,7 +1150,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #333333;
 }
 .footer__message {
   width: 539px;
@@ -1158,7 +1162,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #333333;
 }
 .footer__info {
   font-style: normal;
@@ -1730,12 +1734,8 @@ template {
     margin-bottom: 13px;
   }
 
-  .modal__info {
-    order: 1;
-    margin-bottom: 15px;
-  }
-  .modal__button {
-    order: 2;
+  .modal__dialog {
+    padding: 30px 30px 33px 30px;
   }
 }
 @media (max-width: 767px) {
@@ -1923,7 +1923,17 @@ template {
     flex-basis: 70%;
   }
 
+  .modal {
+    overflow: hidden;
+    height: 100%;
+  }
+  .modal__dialog {
+    height: 90vh;
+    padding: 30px 20px 33px 20px;
+    overflow: auto;
+  }
   .modal__info {
+    flex-basis: 100%;
     order: 1;
     margin-bottom: 15px;
   }
@@ -2078,8 +2088,17 @@ template {
     margin-left: 5px;
   }
 
+  .modal {
+    overflow: hidden;
+    height: 100%;
+  }
   .modal__dialog {
+    height: 80vh;
     padding: 30px 20px 33px 20px;
+    overflow: auto;
+  }
+  .modal__button {
+    width: 100%;
   }
 }
 @media (max-width: 342px) {

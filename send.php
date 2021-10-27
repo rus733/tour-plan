@@ -35,8 +35,8 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    //$mail->SMTPDebug = 2;
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -50,7 +50,6 @@ try {
     // Получатель письма
     $mail->addAddress('9282716617@mail.ru');
     //$mail->addAddress('ikl99997@gmail.com');  
-    
 
     // Отправка сообщения
     $mail->isHTML(true);
@@ -67,10 +66,7 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
-
-
-
-
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+//echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 // Отображение результата
-//header('Location: thankyou.html');
+header('Location: thankyou.html');
+

@@ -198,8 +198,8 @@
       margin-left: 0 
   .modal
     &__dialog
-      padding: 30px 60px 33px 60px             
-
+      padding: 30px 60px 33px 60px 
+    
 
 
 @media (max-width: 768px)
@@ -373,11 +373,11 @@
       &--mb-21
         margin-bottom: 13px 
   .modal
+    &__dialog
+      padding: 30px 30px 33px 30px
     &__info
-      order: 1
-      margin-bottom: 15px
-    &__button
-      order: 2            
+      
+          
 
 @media (max-width: 767px)
   body
@@ -529,12 +529,18 @@
     &__line
       flex-basis: 70%
   .modal
+    overflow: hidden
+    height: 100%
+    &__dialog
+      height: 90vh
+      padding: 30px 20px 33px 20px
+      overflow: auto 
     &__info
+      flex-basis: 100%
       order: 1
       margin-bottom: 15px
     &__button
       order: 2
-        
       
             
 
@@ -657,8 +663,14 @@
       width: 100%
       margin-left: 5px
   .modal
+    overflow: hidden
+    height: 100%
     &__dialog
-      padding: 30px 20px 33px 20px     
+      height: 80vh
+      padding: 30px 20px 33px 20px
+      overflow: auto 
+    &__button
+      width: 100%     
 
 
 @media (max-width: 342px)
@@ -672,6 +684,7 @@
         padding: 0 0px 33px
       &__text
         width: 219px
+      
 
 
 
