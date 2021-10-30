@@ -100,6 +100,7 @@ $(document).ready(function () {
     $(".phone").mask("+7(999)999-99-99", { autoclear: false });
   });
 
+  AOS.init();
   //$("#center_ok")
   //.click(function () {
   //$(this).setCursorPosition(3);
