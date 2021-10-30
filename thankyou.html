@@ -172,11 +172,7 @@
             <p class="hotel-description hotel-info__description--mb-15">
               Our manager will call you in 5 minutes!
             </p>
-            <a href="index.html" class="go-back">
-              <button class="button go-back__button" type="submit">
-                Go back to main page
-              </button>
-            </a>
+            <a href="index.html" class="go-back"> Go back to main page </a>
           </div>
           <!-- /.hotel-info__text -->
         </div>
@@ -375,6 +371,7 @@
                   placeholder="Your Full Name*"
                   name="name"
                   required
+                  minlength="2"
                 />
               </div>
               <div class="footer__input-group">
@@ -411,8 +408,10 @@
       </div>
       <!-- /.container -->
     </footer>
-
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

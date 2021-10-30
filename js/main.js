@@ -70,6 +70,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please specify your phone",
+          minlength: "phone number must be at least 10 digits",
         },
       },
     });
@@ -77,7 +78,7 @@ $(document).ready(function () {
 
   $(".subscribe").each(function () {
     $(this).validate({
-      errorClass: "invalid",
+      errorClass: "invalid_news",
       messages: {
         name: {
           required: "Please specify your name",
@@ -85,7 +86,8 @@ $(document).ready(function () {
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          email_news:
+            "Your email address must be in the format of name@domain.com",
         },
         phone: {
           required: "Please specify your phone",
@@ -95,6 +97,13 @@ $(document).ready(function () {
   });
 
   jQuery(function ($) {
-    $(".phone").mask("+7(999) 999-99-99");
+    $(".phone").mask("+7(999)999-99-99", { autoclear: false });
   });
+
+  //$("#center_ok")
+  //.click(function () {
+  //$(this).setCursorPosition(3);
+  //})
+  //.mask("+7(999) 999-9999");
 });
+//.mask("+7(999)999-99-99", { autoclear: false });

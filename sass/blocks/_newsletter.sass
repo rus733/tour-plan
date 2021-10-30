@@ -23,6 +23,8 @@
     justify-content: space-between
     max-width: 731px
     margin: auto 
+  &__subscribe 
+    border-radius: 4px   
   &-title
     margin-top: 0
     margin-bottom: 0
@@ -31,7 +33,6 @@
     font-weight: 300
     font-size: 24px
     line-height: 30px
-
     &__strong
       display: block
       font-weight: 600
@@ -40,9 +41,7 @@
       text-transform: uppercase
 .subscribe
   position: relative 
-  display: flex //
-  border-radius: 4px
-  overflow: hidden // скрывать все что выпадаен за пределы блока
+  display: flex 
   width: 350px
   height: 55px
   &__input
@@ -56,6 +55,7 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 4px
   &__button
     position: absolute
     min-width: 65px 
@@ -69,4 +69,5 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
+    border-radius: 0 4px 4px 0
 

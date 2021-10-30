@@ -61,7 +61,32 @@ button {
 .invalid {
   color: #EC1F46;
   border-bottom: 1px solid #EC1F46;
-  z-index: 1;
+  z-index: 102;
+}
+
+#email_news-error {
+  position: absolute;
+  top: 70px;
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
+.go-back {
+  border: none;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  display: inline-block;
+  height: 40px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -787,6 +812,9 @@ template {
   max-width: 731px;
   margin: auto;
 }
+.newsletter__subscribe {
+  border-radius: 4px;
+}
 .newsletter-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -807,8 +835,6 @@ template {
 .subscribe {
   position: relative;
   display: flex;
-  border-radius: 4px;
-  overflow: hidden;
   width: 350px;
   height: 55px;
 }
@@ -823,6 +849,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
 }
 .subscribe__button {
   position: absolute;
@@ -837,6 +864,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1079,7 +1107,7 @@ template {
 }
 .footer__form {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 4px;
@@ -1942,7 +1970,7 @@ template {
     height: 100%;
   }
   .modal__dialog {
-    height: 90vh;
+    max-height: 80vh;
     padding: 30px 20px 33px 20px;
     overflow: auto;
   }
@@ -2107,7 +2135,7 @@ template {
     height: 100%;
   }
   .modal__dialog {
-    height: 80vh;
+    max-height: 80vh;
     padding: 30px 20px 33px 20px;
     overflow: auto;
   }

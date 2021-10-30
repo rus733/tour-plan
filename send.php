@@ -9,7 +9,7 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
-
+$email_news = $_POST['email_news'];
 
 // Формирование самого письма
 $title = "Новое сообщение Best Tour Plan";
@@ -18,14 +18,14 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br> $message<br><br>
-<b>Прошу прислать мне новости по этому адресу:</b><br> $email
+<b>Прошу прислать мне новости по этому адресу:</b><br> $email $email_news
 ";
 
 // Формирование заявки на  рассылку новостей
 $title_news = "Заявка на рассылку новостей";
 $body_news = "
 <h2> Заявка на рассылку новостей </h2>
-<b>Прошу прислать мне новости по этому адресу:</b><br> $email
+<b>Прошу прислать мне новости по этому адресу:</b><br> $email_news
 ";
 
 
