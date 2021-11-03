@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30Best Tour Plan - Hotel Booking</title>
+    <title>301Best Tour Plan - Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,20 +12,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/aos.css" /> -->
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
-
   <body>
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a
             href="#"
-            class="logo"
-            data-aos="zoom-in-right"
+            class="logo animated"
+            data-aos="zoom-in"
             data-aos-delay="100"
           >
             <img
@@ -36,8 +36,6 @@
           </a>
 
           <form
-            data-aos="zoom-in-right"
-            data-aos-delay="200"
             action="#"
             class="search navbar-top__search navbar-top__search_mobile_hidden"
           >
@@ -55,8 +53,6 @@
           <a
             href="#"
             class="user navbar-top__user navbar-top__user_mobile_hidden"
-            data-aos="zoom-in-right"
-            data-aos-delay="300"
           >
             <img
               src="img/user-avatar.png"
@@ -334,9 +330,9 @@
     <section class="newsletter">
       <div class="newsletter-wrapper">
         <h2
-          class="newsletter-title newsletter__title"
-          data-aos="fade-right"
-          data-aos-delay="300"
+          class="newsletter-title newsletter__title animated"
+          data-aos="zoom-in"
+          data-aos-delay="200"
         >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
@@ -344,9 +340,9 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe"
-          data-aos="fade-left"
-          data-aos-delay="400"
+          class="subscribe newsletter__subscribe animated"
+          data-aos="zoom-in"
+          data-aos-delay="300"
         >
           <input
             type="email"
@@ -499,10 +495,20 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
-                  beatae officia sit magni neque, explicabo repellat perferendis
-                  amet iure quos ratione dolor quaerat laborum temporibus
-                  accusantium quae ad excepturi dolore!
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Mollitia sapiente, incidunt, eaque necessitatibus obcaecati
+                  nihil amet nemo consequatur exercitationem tenetur sit nulla
+                  voluptatibus nobis numquam. Reprehenderit necessitatibus
+                  tempora nisi? Similique eum consectetur ipsum vel
+                  exercitationem hic. Voluptatibus ab tempora, distinctio
+                  perferendis recusandae ipsa quod earum odit unde sint
+                  inventore exercitationem obcaecati rerum a aut ex officiis
+                  asperiores officia? Atque error velit repudiandae, dignissimos
+                  quos ut doloribus ipsum id molestias eius aperiam sint.
+                  Excepturi consectetur fugit praesentium nihil est nisi dolores
+                  eum cum error, quis minima doloremque sit repellat omnis
+                  inventore maxime laudantium tempora. Eius similique eaque
+                  nostrum reprehenderit perferendis? Animi.
                 </p>
                 <!-- /.reviews-slider__text -->
               </div>
@@ -529,7 +535,7 @@
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
           <div
-            class="card activities__card"
+            class="card activities__card animated"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -542,11 +548,17 @@
               The curious corner<br />
               of chamarel
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card animated"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -559,11 +571,17 @@
               Gymkhana club golf <br />
               course
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card animated"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -576,11 +594,17 @@
               Tamarind falls hiking <br />
               trip - full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
           <div
-            class="card activities__card"
+            class="card activities__card animated"
             data-aos="fade-up"
             data-aos-delay="300"
           >
@@ -593,7 +617,13 @@
               The blue marine discovery <br />
               quest
             </h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /.card -->
         </div>
@@ -679,7 +709,7 @@
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
-                class="footer__link"
+                class="footer__link animated"
                 data-aos="flip-left"
                 data-aos-delay="100"
                 ><img src="img/facebook.svg" alt="icon: facebook" />
@@ -687,7 +717,7 @@
               <a
                 href="https://www.youtube.com/"
                 target="_blank"
-                class="footer__link"
+                class="footer__link animated"
                 data-aos="flip-left"
                 data-aos-delay="200"
               >
@@ -696,7 +726,7 @@
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
-                class="footer__link"
+                class="footer__link animated"
                 data-aos="flip-left"
                 data-aos-delay="300"
               >
@@ -731,11 +761,7 @@
             </p>
             <ul class="footer__ul">
               <li class="footer__item footer__item--mb-21">
-                <div
-                  class="footer__icon-wrapper"
-                  data-aos="flip-left"
-                  data-aos-delay="300"
-                >
+                <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
                     src="img/map-marker.svg"
@@ -746,11 +772,7 @@
                 States
               </li>
               <li class="footer__item footer__item--mb-22">
-                <div
-                  class="footer__icon-wrapper"
-                  data-aos="flip-left"
-                  data-aos-delay="300"
-                >
+                <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
                     src="img/phone-call-2.svg"
@@ -781,11 +803,7 @@
                 </div>
               </li>
               <li class="footer__item footer__item--mb-2">
-                <div
-                  class="footer__icon-wrapper"
-                  data-aos="flip-left"
-                  data-aos-delay="300"
-                >
+                <div class="footer__icon-wrapper">
                   <img
                     class="footer__icon"
                     src="img/email.svg"
@@ -818,7 +836,9 @@
                   class="input footer__input phone"
                   placeholder="Phone Number*"
                   name="phone"
+                  data-mask="+7(999)999-99-99"
                   required
+                  minlength="10"
                 />
               </div>
               <textarea
@@ -833,8 +853,10 @@
           <!-- /.footer__contact-form -->
           <div class="footer__bottom">
             <p class="footer__line">
-              Disclaimer &nbsp;&nbsp;Conditions of use &nbsp;&nbsp;Cancellation
-              policy
+              <a href="#" class="disclaimer-link"
+                >Disclaimer &nbsp;&nbsp;Conditions of use
+                &nbsp;&nbsp;Cancellation policy</a
+              >
             </p>
             <div class="footer__card">
               <img src="img/footer-card1.png" alt="Icons: card" />
@@ -897,6 +919,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/aos.js"></script>
+    <!-- <script src="js/aos.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>

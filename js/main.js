@@ -80,31 +80,32 @@ $(document).ready(function () {
     $(this).validate({
       errorClass: "invalid_news",
       messages: {
-        name: {
-          required: "Please specify your name",
-          minlength: "name must be at least 2 letters",
-        },
         email: {
           required: "We need your email address to contact you",
           email_news:
             "Your email address must be in the format of name@domain.com",
         },
-        phone: {
-          required: "Please specify your phone",
-        },
       },
     });
   });
+  // Плагин Vfsked Input
 
   jQuery(function ($) {
     $(".phone").mask("+7(999)999-99-99", { autoclear: false });
   });
 
+  //$("input[type='tel']").mask("+7(999)999-99-99", { autoclear: false });
+
+  //jQuery(function ($) {
+  //$(".phone").mask("+7(999)999-99-99", { autoclear: false });
+  //});
+
   AOS.init();
+
   //$("#center_ok")
   //.click(function () {
   //$(this).setCursorPosition(3);
   //})
   //.mask("+7(999) 999-9999");
+  //.mask("+7(999)999-99-99", { autoclear: false });
 });
-//.mask("+7(999)999-99-99", { autoclear: false });
