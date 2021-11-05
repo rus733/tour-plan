@@ -1,11 +1,72 @@
+@media screen and (min-width: 993px)
+  button
+    &:hover
+      transition: 300ms 
+      background-color: $dark-red
+  a
+    &:hover
+      transition: 300ms 
+      border-radius: 4px
+      background: $dark-red
+
+  .reviews-slider__button
+    &:hover 
+      //border: 1px solid $primary
+      border-radius: 4px
+      //background: transparent
+      
+
+  .map
+    &:hover 
+      border: 0.5px solid $primary
+      color: $light
+      background: $primary
+          
+  .disclaimer
+    &-link
+      display: inline-block
+      color: $light
+      text-decoration: none
+  //&:hover 
+    //border: 2px solid $primary
+    //color: $light
+   // background: $dark-red
+  //&:hover
+    //transition: all 500ms ease 
+    //background-color: #04f82d
+    //transform: skew(-10deg)
+  .go-back
+    //&:hover 
+    //border: 3px solid $primary
+    //color: $primary
+    //background: $light
+    //text-align: center
+
+
+
+
+  
 @media (max-width: 1920px)
   .number-link
     display: inline-block
   .disclaimer
     &-link
       display: inline-block
-      text-decoration: none
       color: $light
+      text-decoration: none
+  .hotel
+    padding-bottom: 71px 
+  .footer
+    &__social
+      &-network
+        margin-top: 10px
+    &__contact
+      &-details
+        margin-top: 10px 
+      &-form
+        margin-top: 10px  
+  
+                  
     
 @media (max-width: 1200px)
   .container
@@ -78,6 +139,15 @@
 
 
 @media (max-width: 992px)
+
+
+  button
+    &:hover
+      //transition: unset
+      background-color: transparen
+      -webkit-user-select: none
+      -webkit-touch-callout: none
+
   .container
     max-width: 700px
   .logo
@@ -100,6 +170,8 @@
       width: 340px
       
   .hotel
+    padding-bottom: 57px
+
     &-grid
       flex-direction: column
     &__slider
@@ -191,7 +263,7 @@
       margin-left: 25px      
     &__contact
       &-details
-        grid-column: span 9 
+        grid-column: span 13 
         grid-row: 3
         margin-top: 50px
       &-form
@@ -224,36 +296,51 @@
       margin-left: 0 
   .modal
     &__dialog
-      padding: 30px 60px 33px 60px 
+      padding: 30px 60px 33px 60px
+          
+
 
 
 
 
     
-@media (max-width: 800px)
+@media (max-width: 991px)
+  .container
+    max-width: 700px
+    width: 95%
   .user
     &__name
       margin-left: 18px
-      margin-right: 5px
+      margin-right: 0px
       margin-top: 5px
 
   .navbar
     &-menu
       padding-left: 15px
       padding-right: 15px
+    &-top
+      &__search
+        margin-right: 73px
+  .booking
+    &__num
+      margin-left: 5px
+    &__call-center
+      margin-right: 0        
   .reviews
     padding-bottom: 45px
     &-slider
+      &__button
+        top: 176px
+        &--next
+          right: 0
+        &--prev
+          left: 0  
       &__username
         margin-top: 13px
       &__text
         line-height: 160%
-         
-        
-  .swiper-wrapper
           
       
-         
   .activities
     padding-bottom: 45px 
   .footer
@@ -262,14 +349,19 @@
       height: 105px
       margin-top: -5px
     &__social
+      &-links
+        margin-top: 0
       &-network
-        margin-top: 18px 
+        margin-top: 11px 
     &__categories
       margin-top: 46px 
     &__additional
-      margin-top: 46px
+      margin-top: 43px
+      margin-left: 26px
     &__legal
-      margin-top: 46px
+      margin-top: 42px
+      margin-left: 32px
+      margin-right: 0
     &__contact
       &-details
         margin-top: 55px 
@@ -279,8 +371,12 @@
     &__contact
       &-form
         grid-column: span 10 
-        margin-right: 45px 
+        margin-right: 33px 
         margin-bottom: 40px 
+        margin-top: 25px
+    &__title 
+      &--mb-3
+        margin-bottom: 20px    
 
 
 
@@ -293,7 +389,7 @@
 @media (max-width: 768px)
   .container
     max-width: 700px
-    width: 100%
+    width: 95%
   body
     //padding-top: 161px  
   .navbar
@@ -331,6 +427,7 @@
     width: 340px 
     height: 210px
     padding: 29px 22px 25px 25px
+    margin-right: 20px
     &__start
       margin-left: 0
     &__pricetag
@@ -386,10 +483,10 @@
   .subscribe
     margin-top: 4px
   .activities
-    padding-top: 31px
+    padding-top: 13px
     padding-bottom: 49px
-    padding-left: 37px
-    padding-right: 36px
+    padding-left: 16px
+    padding-right: 16px
     &-wrapper
       width: 100%
       margin: 0 auto
@@ -398,13 +495,21 @@
   .card
     width: 48%
     height: 255px
+    padding-left: 21px
+    
     &__button
       margin-left: 2px 
       margin-right: 0px
-      padding: 7px 20px 
+      padding: 8px 21px 
      
   .footer
     padding-top: 78px
+    padding-left: 17px
+    padding-right: 15px
+    &__text
+      margin-bottom: 25px
+
+  
     &-wrapper
       grid-template-columns: repeat(12, 1fr)
       grid-row-gap: 10px
@@ -451,18 +556,16 @@
       &-form
         grid-column: span 10
         grid-row: 4
-        margin-bottom: 42px              
+        margin-top: 23px
+        margin-left: -5px
+        margin-right: 43px    
     &__title
       margin-top: 0px
       &--inline
         margin: 0px 43px 0 0
       &--mb-4
         margin-bottom: 35px  
-    &__contact
-      &-form
-        margin-top: 29px
-        margin-left: -5px
-        margin-right: 43px
+
     &__icon
       &-wrapper
         margin-left: 7px
@@ -484,6 +587,13 @@
     //transform: none
     //translate: none
 
+@media (max-width: 720px)
+  .newsletter
+    padding-left: 20px
+    padding-right: 20px
+  .search
+    &__input
+      width: 300px  
 
 
 @media (max-width: 667px)
@@ -631,6 +741,10 @@
     &__input
       &-group
         flex-basis: 47%
+    &__contact
+      &-form
+        max-width: 90%
+
     &__bottom
       grid-row: 5
       grid-column: span 12
@@ -738,6 +852,8 @@
     padding-left: 5px
     padding-right: 5px
   .footer
+    &-wrapper
+      margin-left: -8px
     &__logo
       margin-left: 5px
     &__social
@@ -783,7 +899,7 @@
       width: 100%     
 
 
-@media (max-width: 342px)
+@media (max-width: 400px)
   .navbar
     &-bottom
       top: 70px
@@ -800,7 +916,7 @@
 
 
 
-@media (max-width: 320px)
+@media (max-width: 350px)
 
   body
     padding-top: 70px  
@@ -981,7 +1097,8 @@
   .card
     width: 340px
     height: 255px 
-    margin-bottom: 20px 
+    margin-bottom: 20px
+    padding-left: 27px 
     &__image
       width: 100%
       height: 100%
@@ -995,6 +1112,8 @@
     width: 100%
     padding-top: 68px
     margin-left: 0
+    padding-left: 10px
+    padding-right: 0
     &__legal
       margin: 0
     &__info
@@ -1009,7 +1128,7 @@
       flex-basis: 50%
     &-wrapper
       grid-template-columns: 1fr
-      margin-left: 5px
+      margin-left: -3px
       width: 100%
       
     &__logo
@@ -1038,12 +1157,13 @@
       margin-bottom: 5px
     &__contact
       &-details
-        max-width: 95%
+        max-width: 100%
         grid-column: 1
         grid-row: 6
         justify-self: start
         margin-top: 30px
         margin-left: 1px
+
       &-form
         max-width: 100%
         margin-bottom: 10px
@@ -1051,7 +1171,7 @@
         margin-right: 0
         margin-left: 0
     &__form
-      width: 95%
+      width: 99%
       margin-left: 0  
     &__title
       &--inline

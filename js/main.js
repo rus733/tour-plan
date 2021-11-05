@@ -88,24 +88,11 @@ $(document).ready(function () {
       },
     });
   });
-  // Плагин Vfsked Input
 
-  jQuery(function ($) {
-    $(".phone").mask("+7(999)999-99-99", { autoclear: false });
+  //maskinput
+  $(document).ready(function () {
+    $(".phone").mask("+7(999)999-99-99");
   });
 
-  //$("input[type='tel']").mask("+7(999)999-99-99", { autoclear: false });
-
-  //jQuery(function ($) {
-  //$(".phone").mask("+7(999)999-99-99", { autoclear: false });
-  //});
-
   AOS.init();
-
-  //$("#center_ok")
-  //.click(function () {
-  //$(this).setCursorPosition(3);
-  //})
-  //.mask("+7(999) 999-9999");
-  //.mask("+7(999)999-99-99", { autoclear: false });
 });
