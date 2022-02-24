@@ -1,9 +1,10 @@
 # Tour-Plan
 
-Educational project on the Web-Start course from Glo Academy.
-The author of the course is Artem Islamov.
-Учебный проект на курсе Веб-Старт от Glo Academy.
-Автор курса — Артем Исламов.
+- Educational project on the Web-Start course from Glo Academy.
+- The author of the course is Artem Islamov.
+
+- Учебный проект на курсе Веб-Старт от Glo Academy.
+- Автор курса — Артем Исламов.
 
 ## Проект выполняет Демченко Руслан.
 ## The project is carried out by Ruslan Demchenko.
