@@ -22,3 +22,5 @@
 ## View
 
 https://rus733.github.io/tour-plan/
+
+https://orion-z.ru/tour-plan/
