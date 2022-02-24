@@ -15,6 +15,10 @@
 - Swiper Slider JS
 
 
-## Куратор
+### Куратор
 
 Виталий Моренко.
+
+## View
+
+https://rus733.github.io/tour-plan/
